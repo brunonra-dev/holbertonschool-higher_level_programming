@@ -1,5 +1,22 @@
 #!/usr/bin/python3
-class Square:
+"""Square module
+Task of 0x06. Python - Classes and Objects
 
-    def __init__(self, size):
+"""
+
+
+class Square:
+    """Description of Square Class
+
+    Attributes:
+        __size (int): size of square
+
+    """
+
+    def __init__(self, size=0):
+        """
+        size (int): size of square
+
+        """
+
         self.__size = size
