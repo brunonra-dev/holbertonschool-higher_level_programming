@@ -91,7 +91,7 @@ class Square:
         """print Square if size > 0"""
         if self.__size > 0:
             for posrow in range(self.__position[1]):
-                print("")
+                print(" ")
             for row in range(self.__size):
                 for poscol in range(self.__position[0]):
                     print(" ", end='')
