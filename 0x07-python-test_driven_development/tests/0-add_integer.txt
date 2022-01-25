@@ -53,13 +53,13 @@ Test: a boolean
     ...
     TypeError: a must be an integer
 
-Test: a None
-------------
+Test: b boolean
+---------------
 
-    >>> add_integer(True,10)
+    >>> add_integer(10,True)
     Traceback (most recent call last):
     ...
-    TypeError: a must be an integer
+    TypeError: b must be an integer
 
 Test: 0 args
 ------------
@@ -68,3 +68,9 @@ Test: 0 args
     Traceback (most recent call last):
     ...
     TypeError: add_integer() missing 1 required positional argument: 'a'
+
+Test: 1 arg
+-----------
+
+    >>> add_integer(1)
+    99

@@ -12,7 +12,7 @@ the ``2-matrix_divided.py`` module:
 Now use it:
 
     >>> matrix = [[1, 2, 3],[4, 5, 6]]
-    >>> matrix_divided(matrix, 3)
+    >>> matrix_divided([[1, 2, 3],[4, 5, 6]], 3)
     [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
 
 Tests
@@ -55,8 +55,7 @@ Test: Each row of the matrix must be of the same size
 Test: matrix must be a list of lists of integers or floats
 ----------------------------------------------------------
 
-    >>> matrix = [['cosa', 2, 3],[4, 5, 6]]
-    >>> matrix_divided(matrix, 3)
+    >>> matrix_divided([['cosa', 2, 3],[4, 5, 6]], 3)
     Traceback (most recent call last):
     ...
     TypeError: matrix must be a matrix (list of lists) of integers/floats
@@ -69,3 +68,26 @@ Test: no args
     ...
     TypeError: matrix_divided() missing 2 required positional arguments: 'matrix' and 'div'
 
+Test: args > 2
+--------------
+
+    >>> matrix_divided(matrix, 3, 3)
+    Traceback (most recent call last):
+    ...
+    TypeError: matrix_divided() takes 2 positional arguments but 3 were given
+
+Test: matrix no exist
+---------------------
+
+    >>> matrix_divided(roberto, 3)
+    Traceback (most recent call last):
+    ...
+    NameError: name 'roberto' is not defined
+
+Test: matrix empty
+------------------
+
+    >>> matrix_divided([], 3)
+    Traceback (most recent call last):
+    ...
+    IndexError: list index out of range
