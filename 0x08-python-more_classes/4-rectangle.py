@@ -55,12 +55,12 @@ class Rectangle:
     def __repr__(self):
         w = str(eval("self.width"))
         h = str(eval("self.height"))
-        return f'Rectangle({w},{h})'
+        return f'Rectangle({w}, {h})'
 
     @property
     def width(self):
         """Return width of Rectangle"""
-        return(self.__width)
+        return self.__width
 
     @width.setter
     def width(self, value):
@@ -71,7 +71,7 @@ class Rectangle:
     @property
     def height(self):
         """Return height of Rectangle"""
-        return(self.__height)
+        return self.__height
 
     @height.setter
     def height(self, value):
