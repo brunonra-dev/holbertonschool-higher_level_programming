@@ -24,6 +24,7 @@ class Rectangle:
         area: return area
         perimeter: return perimeter
     """
+
     number_of_instances = 0
 
     def check(self, value=0, item=""):
@@ -51,15 +52,15 @@ class Rectangle:
                 ret += "#"
             if i != self.__height - 1:
                 ret += "\n"
- 
+
         return ret
 
     def __repr__(self):
         return f'Rectangle({self.__width},{self.__height})'
 
     def __del__(self):
-        print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
+        print("Bye rectangle...")
 
     @property
     def width(self):
