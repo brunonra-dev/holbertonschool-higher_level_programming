@@ -53,7 +53,9 @@ class Rectangle:
         return ret
 
     def __repr__(self):
-        return f'Rectangle({self.__width},{self.__height})'
+        w = str(eval("self.width"))
+        h = str(eval("self.height"))
+        return f'Rectangle({w},{h})'
 
     @property
     def width(self):
