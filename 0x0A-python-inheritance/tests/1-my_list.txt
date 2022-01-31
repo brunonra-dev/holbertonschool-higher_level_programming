@@ -1,0 +1,44 @@
+The ``1-my_list.py`` module
+==========================
+
+Using ``print_sorted``
+---------------------
+
+This is an example text file. First import ``print_sorted`` from
+the ``1-my_list.py`` module:
+
+    >>> MyList = __import__('1-my_list').MyList
+
+Now use it:
+
+    >>> my_list = MyList()
+    >>> my_list.append(4)
+    >>> my_list.append(1)
+    >>> my_list.print_sorted()
+    [1, 4]
+
+Tests
+=====
+
+Test: Negative num
+------------------
+
+    >>> my_list = MyList()
+    >>> my_list.append(-4)
+    >>> my_list.append(1)
+    >>> my_list.print_sorted()
+    [-4, 1]
+
+Test: empty
+-----------
+
+    >>> my_list = MyList()
+    >>> my_list.print_sorted()
+    []
+
+Test: 1 Arg
+-----------
+
+    >>> my_list = MyList()
+    >>> my_list.append(1)
+    [1]
