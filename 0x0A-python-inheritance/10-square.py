@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-Rectangle class
+Square class
 """
 
 
@@ -8,6 +8,13 @@ BaseGeometry = __import__('9-rectangle').BaseGeometry
 
 
 class Square(Rectangle):
+    """
+    inherits from Rectangle
+
+    Returns:
+        - Area
+        - str
+    """
     def __init__(self, size):
         self.integer_validator("size", size)
         self.__size = size
