@@ -1,0 +1,42 @@
+The ``7-base_geometry.py`` module
+==========================
+
+Using ``area`` & ``integer_validator``
+--------------------------------------
+
+This is an example text file. First import ``area`` & ``integer_validator``
+from the ``7-base_geometry.py`` module:
+
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+Now use it:
+
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("my_int", 12)
+
+Tests
+=====
+
+Test: Negative num
+------------------
+
+    >>> bg.integer_validator("my_int", 12, 2)
+    Traceback (most recent call last):
+    ...
+    TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
+Test: only name
+---------------
+
+    >>> bg.integer_validator("my_name")
+    Traceback (most recent call last):
+    ...
+    TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+Test: no args
+-------------
+
+    >>> bg.integer_validator()
+    Traceback (most recent call last):
+    ...
+    TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
