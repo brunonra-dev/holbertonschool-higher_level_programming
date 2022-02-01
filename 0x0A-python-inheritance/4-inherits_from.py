@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-is_kind_of_class module
+inherits_from module
 """
 
 
