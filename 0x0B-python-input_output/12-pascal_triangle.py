@@ -19,5 +19,5 @@ def pascal_triangle(n):
             tmp.append(i)
         tmp[-1] = 1
         tri.append(tmp)
-    
+
     return tri
