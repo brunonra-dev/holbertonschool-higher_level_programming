@@ -1,34 +1,34 @@
 #!/usr/bin/python3
 """
-Test for base.py
+Test for rectangle.py
 """
 import unittest
-from models.base import Base
+from models.rectangle import Rectangle
 
 
-class test_base(unittest.TestCase):
+class test_rectangle(unittest.TestCase):
 
-    def test_make_base(self):
+    def make_rectangle(self):
         """
         check if base id no args
         """
-        b1 = Base()
-        self.assertEqual(b1.id, 1)
+        r1 = Rectangle(10, 2)
+        self.assertEqual(print(b1.id), 1)
 
-    def test_make_base_12(self):
+    def make_rectangle_id(self):
         """
-        check if base id with 1 arg
+        check if base id with id
         """
-        b1 = Base(12)
+        b1 = Rectangle(10, 2, 0, 0, 12)
         self.assertEqual(print(b1.id), 12)
 
-    def test_make_base_args(self):
+    def make_base_arg(self):
         """
-        check if base id with 2 agrs
+        check base id with 1 agrs
         """
-        self.assertRaises(TypeError, Base, 12, 4)
+        self.assertRaises(TypeError, Base, 12)
 
-    def test_base_id_inc(self):
+    def base_id_inc(self):
         """
         check if base id increment
         """
@@ -36,7 +36,7 @@ class test_base(unittest.TestCase):
         b2 = Base()
         self.assertEqual(print(b2.id), 2)
 
-    def test_base_id_inc2(self):
+    def base_id_inc2(self):
         """
         check if base id increment
         """
@@ -45,26 +45,26 @@ class test_base(unittest.TestCase):
         b3 = Base()
         self.assertEqual(print(b2.id), 2)
 
-    def test_base_id_neg(self):
+    def base_id_neg(self):
         """
         check base id negaative
         """
         b1 = Base(-1)
         self.assertEqual(print(b1.id), -1)
 
-    def test_base_id_str(self):
+    def base_id_str(self):
         """
         check base id str
         """
         self.assertRaises(TypeError, Base, "hola")
 
-    def test_base_id_float(self):
+    def base_id_float(self):
         """
         check base id float
         """
         self.assertRaises(TypeError, Base, 1.0)
 
-    def test_base_id_bool(self):
+    def base_id_bool(self):
         """
         check base id bool
         """
