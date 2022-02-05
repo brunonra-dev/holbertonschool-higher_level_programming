@@ -12,15 +12,14 @@ class test_base(unittest.TestCase):
         """
         check if base id no args
         """
-        b1 = Base()
-        self.assertEqual(b1.id, 1)
+        self.assertEqual(Base().id, 1)
 
     def test_make_base_12(self):
         """
         check if base id with 1 arg
         """
         b1 = Base(12)
-        self.assertEqual(print(b1.id), 12)
+        self.assertEqual(b1.id, 12)
 
     def test_make_base_args(self):
         """
@@ -34,38 +33,22 @@ class test_base(unittest.TestCase):
         """
         b1 = Base()
         b2 = Base()
-        self.assertEqual(print(b2.id), 2)
+        self.assertEqual(b2.id, 2)
 
     def test_base_id_inc2(self):
         """
         check if base id increment
         """
         b1 = Base()
-        b2 = Base(12)
+        b2 = Base(10)
         b3 = Base()
-        self.assertEqual(print(b2.id), 2)
+        self.assertEqual(b3.id, 2)
 
     def test_base_id_neg(self):
         """
         check base id negaative
         """
-        b1 = Base(-1)
-        self.assertEqual(print(b1.id), -1)
+        self.assertEqual(Base(-1).id, -1)
 
-    def test_base_id_str(self):
-        """
-        check base id str
-        """
-        self.assertRaises(TypeError, Base, "hola")
-
-    def test_base_id_float(self):
-        """
-        check base id float
-        """
-        self.assertRaises(TypeError, Base, 1.0)
-
-    def test_base_id_bool(self):
-        """
-        check base id bool
-        """
-        self.assertRaises(TypeError, Base, True)
+if __name__ == '__main__':
+    unittest.main()
