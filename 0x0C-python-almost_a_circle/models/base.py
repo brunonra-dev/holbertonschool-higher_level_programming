@@ -5,6 +5,7 @@ Class Base
 
 
 class Base:
+    """This class will be the “base” of all other classes"""
 
     __nb_objects = 0
 
@@ -14,7 +15,7 @@ class Base:
         Args:
             id (int, optional): Id of Base. Defaults to None.
         """
-        if id == None:
+        if id is None:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
         else:
