@@ -121,10 +121,14 @@ class Rectangle(Base):
         if self.__width == 0 or self.__height == 0:
             return ""
 
-        for i in range(self.__height):
-            for j in range(self.__width):
+        for posrow in range(self.__y):
+                ret += "\n"
+        for row in range(self.__height):
+            for poscol in range(self.__x):
+                    ret += " "
+            for col in range(self.__width):
                 ret += "#"
-            if i != self.__height - 1:
+            if row != self.__height - 1:
                 ret += "\n"
 
         print(ret)
