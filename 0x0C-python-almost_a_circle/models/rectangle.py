@@ -7,6 +7,7 @@ from models.base import Base
 
 
 class Rectangle(Base):
+    """the class Rectangle that inherits from Base"""
 
     def __init__(self, width, height, x=0, y=0, id=None):
         if type(width) is not int:
