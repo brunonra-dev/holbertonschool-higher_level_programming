@@ -132,3 +132,9 @@ class Rectangle(Base):
                 ret += "\n"
 
         print(ret)
+
+    def update(self, *args):
+        """assigns an argument to each attribute"""
+        attrs = ["id", "width", "height", "x", "y"]
+        for arg in range(len(args)):
+                setattr(self, attrs[arg], args[arg])
