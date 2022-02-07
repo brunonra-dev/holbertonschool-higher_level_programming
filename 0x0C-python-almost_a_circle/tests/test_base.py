@@ -8,6 +8,9 @@ from models.base import Base
 
 class test_base(unittest.TestCase):
 
+    def setUp(self):
+        Base._Base__nb_objects = 0
+
     def test_make_base(self):
         """
         check if base id no args
@@ -27,7 +30,7 @@ class test_base(unittest.TestCase):
         """
         self.assertRaises(TypeError, Base, 12, 4)
 
-    def test_base_id_inc(self):
+    def test1_base_id_inc(self):
         """
         check if base id increment
         """
@@ -35,7 +38,7 @@ class test_base(unittest.TestCase):
         b2 = Base()
         self.assertEqual(b2.id, 2)
 
-    def test_base_id_inc2(self):
+    def test2_base_id_inc2(self):
         """
         check if base id increment
         """
