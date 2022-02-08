@@ -1,6 +1,11 @@
+![Holberton](https://blog.holbertonschool.com/wp-content/uploads/2019/04/instagram_feed180-1024x1024.jpg)
+
 # Holbertonschool higher level programming
 
-## 0x00. Python - Hello, World
+In this repository are all the projects for higher level of Holberton School
+
+## Repository Content
+### 0x00. Python - Hello, World
 
 0-run
 
@@ -30,7 +35,7 @@
 
 102-magic_calculation.py
 
-## 0x01-python-if_else_loops_functions
+### 0x01-python-if_else_loops_functions
 
 0-positive_or_negative.py
 
@@ -66,7 +71,7 @@
 
 102-magic_calculation.py
 
-## 0x02-python-import_modules
+### 0x02-python-import_modules
 
 0-add.py
 
@@ -80,7 +85,7 @@
 
 5-variable_load.py
 
-## 0x03-python-data_structures
+### 0x03-python-data_structures
 
 0-print_list_integer.py
 
@@ -108,7 +113,7 @@
 
 12-switch.py
 
-## 0x04-python-more_data_structures
+### 0x04-python-more_data_structures
 
 0-square_matrix_simple.py
 
@@ -134,7 +139,7 @@
 
 11-multiply_list_map.py
 
-## 0x05-python-exceptions
+### 0x05-python-exceptions
 
 0-safe_print_list.py
 
@@ -152,7 +157,7 @@
 
 100-safe_print_integer_err.py
 
-## 0x06-python-classes
+### 0x06-python-classes
 
 0-square.py
 
