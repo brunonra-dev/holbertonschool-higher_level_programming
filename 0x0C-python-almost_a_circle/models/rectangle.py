@@ -134,7 +134,7 @@ class Rectangle(Base):
         print(ret)
 
     def update(self, *args, **kwargs):
-        """assigns an argument to each attribute"""
+        """Set attributes of Rectangle"""
         attrs = ["id", "width", "height", "x", "y"]
 
         if args:
