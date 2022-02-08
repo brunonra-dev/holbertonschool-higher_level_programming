@@ -172,7 +172,7 @@ In this repository are all the projects for higher level of Holberton School
 ### [![folder](https://img.icons8.com/fluency/19/000000/folder-invoices--v2.png) 0x0C-python-almost_a_circle](https://github.com/brunonra-dev/holbertonschool-higher_level_programming/tree/main/0x0C-python-almost_a_circle)
 
 - models/
-  - __init__.py
+  - \_\_init\_\_.py
   - base.py
   - rectangle.py
   - square.py
