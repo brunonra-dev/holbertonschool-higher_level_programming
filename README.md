@@ -5,7 +5,7 @@
 In this repository are all the projects for higher level of Holberton School
 
 ## Repository Content
-### 0x00. Python - Hello, World
+### [![folder](https://img.icons8.com/fluency/19/000000/folder-invoices--v2.png) 0x00. Python - Hello, World](https://github.com/brunonra-dev/holbertonschool-higher_level_programming/tree/main/0x00-python-hello_world)
 
 0-run
 
@@ -35,7 +35,7 @@ In this repository are all the projects for higher level of Holberton School
 
 102-magic_calculation.py
 
-### 0x01-python-if_else_loops_functions
+### [![folder](https://img.icons8.com/fluency/19/000000/folder-invoices--v2.png) 0x01-python-if_else_loops_functions](https://github.com/brunonra-dev/holbertonschool-higher_level_programming/tree/main/0x01-python-if_else_loops_functions)
 
 0-positive_or_negative.py
 
@@ -71,7 +71,7 @@ In this repository are all the projects for higher level of Holberton School
 
 102-magic_calculation.py
 
-### 0x02-python-import_modules
+### [![folder](https://img.icons8.com/fluency/19/000000/folder-invoices--v2.png) 0x02-python-import_modules](https://github.com/brunonra-dev/holbertonschool-higher_level_programming/tree/main/0x02-python-import_modules)
 
 0-add.py
 
@@ -85,7 +85,7 @@ In this repository are all the projects for higher level of Holberton School
 
 5-variable_load.py
 
-### 0x03-python-data_structures
+### [![folder](https://img.icons8.com/fluency/19/000000/folder-invoices--v2.png) 0x03-python-data_structures](https://github.com/brunonra-dev/holbertonschool-higher_level_programming/tree/main/0x03-python-data_structures)
 
 0-print_list_integer.py
 
@@ -113,7 +113,7 @@ In this repository are all the projects for higher level of Holberton School
 
 12-switch.py
 
-### 0x04-python-more_data_structures
+### [![folder](https://img.icons8.com/fluency/19/000000/folder-invoices--v2.png) 0x04-python-more_data_structures](https://github.com/brunonra-dev/holbertonschool-higher_level_programming/tree/main/0x04-python-more_data_structures)
 
 0-square_matrix_simple.py
 
@@ -139,7 +139,7 @@ In this repository are all the projects for higher level of Holberton School
 
 11-multiply_list_map.py
 
-### 0x05-python-exceptions
+### [![folder](https://img.icons8.com/fluency/19/000000/folder-invoices--v2.png) 0x05-python-exceptions](https://github.com/brunonra-dev/holbertonschool-higher_level_programming/tree/main/0x05-python-exceptions)
 
 0-safe_print_list.py
 
@@ -157,7 +157,7 @@ In this repository are all the projects for higher level of Holberton School
 
 100-safe_print_integer_err.py
 
-### 0x06-python-classes
+### [![folder](https://img.icons8.com/fluency/19/000000/folder-invoices--v2.png) 0x06-python-classes](https://github.com/brunonra-dev/holbertonschool-higher_level_programming/tree/main/0x06-python-classes)
 
 0-square.py
 
