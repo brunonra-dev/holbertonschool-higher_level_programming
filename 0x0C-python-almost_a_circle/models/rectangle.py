@@ -122,10 +122,10 @@ class Rectangle(Base):
             return ""
 
         for posrow in range(self.__y):
-                ret += "\n"
+            ret += "\n"
         for row in range(self.__height):
             for poscol in range(self.__x):
-                    ret += " "
+                ret += " "
             for col in range(self.__width):
                 ret += "#"
             if row != self.__height - 1:
@@ -139,7 +139,7 @@ class Rectangle(Base):
 
         if args:
             for arg in range(len(args)):
-                    setattr(self, attrs[arg], args[arg])
+                setattr(self, attrs[arg], args[arg])
         else:
             for k, v in kwargs.items():
                 if k in attrs:
@@ -148,4 +148,4 @@ class Rectangle(Base):
     def to_dictionary(self):
         """Returns the dictionary representation of a Rectangle"""
         return {"x": self.__x, "y": self.__y, "id": self.id,
-        "height": self.__height, "width": self.__width}
+                "height": self.__height, "width": self.__width}
