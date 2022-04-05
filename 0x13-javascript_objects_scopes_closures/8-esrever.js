@@ -1,4 +1,10 @@
 #!/usr/bin/node
 exports.esrever = function (list) {
-  return list.reverse();
+  const tmp = [];
+
+  for (let n = list.length - 1; n >= 0; n--) {
+    tmp.push(list[n]);
+  }
+
+  return tmp;
 };
