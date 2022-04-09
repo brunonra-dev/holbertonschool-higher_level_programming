@@ -5,16 +5,16 @@ import MySQLdb
 
 if __name__ == "__main__":
 
-    conn = MySQLdb.connect(host="localhost", port=3306, user=argv[1],
-                           passwd=argv[2], db=argv[3], charset="utf8")
+    db = MySQLdb.connect(host="localhost", port=3306, user=argv[1],
+                         passwd=argv[2], db=argv[3], charset="utf8")
 
-    cursor = conn.cursor()
+    cur = db.cursor()
 
-    cursor.execute("SELECT * FROM states ORDER BY id ASC")
+    cur.execute("SELECT * FROM states ORDER BY id ASC")
 
-    rows = cursor.fetchall()
+    query_rows = cur.fetchall()
 
-    for row in rows:
+    for row in query_rows:
         print(row)
-    cursor.close()
-    conn.close()
+    cur.close()
+    db.close()
