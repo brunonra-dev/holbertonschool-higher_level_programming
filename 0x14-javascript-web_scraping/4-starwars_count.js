@@ -12,7 +12,7 @@ axios.get(process.argv[2])
     let count = 0;
     for (let movie of response.data.results) {
       if (response.data.results[movie].characters.includes(character)) {
-        num = num + 1;
+        count = count + 1;
       }
     }
     console.log(count);
